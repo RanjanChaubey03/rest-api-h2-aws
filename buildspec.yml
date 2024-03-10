@@ -10,5 +10,10 @@ phases:
       - echo "Building Java application with Gradle..."
       - ./gradlew build
 
+  post_build:
+    commands:
+      - echo "[Post-Build] Packaging artifacts..."
+      - mv build/libs/*.jar app.jar
+
 artifacts:
-  files: build/libs/rest-demo-h2-crud-0.0.1-SNAPSHOT.jar
+  files: app.jar
