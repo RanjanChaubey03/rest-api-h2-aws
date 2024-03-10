@@ -12,6 +12,6 @@ phases:
 
 
 artifacts:
-  files: build/libs/*.jar
+  files: build/libs/rest-demo-h2-crud-0.0.1-SNAPSHOT.jar
 
   discard-paths: yes
